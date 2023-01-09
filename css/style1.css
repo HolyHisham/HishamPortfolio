@@ -1,0 +1,201 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #010718; */
+  /* background: linear-gradient(to right, #270150, #6302ca); */
+  background: #270150;
+  overflow: hidden;
+}
+.container {
+  margin-top: 5%;
+  width: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*width: 246px;
+  overflow: hidden;
+  */
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  /* text-align: center; */
+  caret-color: transparent;
+  padding-left: 17px;
+}
+.container .text {
+  position: relative;
+  color: #4070f4;
+  font-size: 15px;
+  font-weight: 600;
+}
+.container .text.first-text {
+  color: #fff;
+}
+.text.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: #010718; */
+  /* background-color: linear-gradient(to right, #270150, #6302ca); */
+  background-color: #270150;
+  border-left: 2px solid #4070f4;
+  animation: animate 4s steps(12) infinite;
+}
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+#main-pic {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  top: -160px;
+  left: 26px;
+}
+.main-button {
+  font-size: 100%;
+  width: 50%;
+  height: 45px;
+  margin-top: 4%;
+  margin-left: 19%;
+  background-color: #836ac8;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  cursor: pointer;
+
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+}
+
+.main-button:hover {
+  background-color: #3b0179;
+  transform: skew(-10deg);
+  -webkit-transform: skew(-10deg);
+  -moz-transform: skew(-10deg);
+  -ms-transform: skew(-10deg);
+  -o-transform: skew(-10deg);
+}
+
+.main-button:focus {
+  background-color: #3b0179;
+  transform: skew(-10deg);
+  -webkit-transform: skew(-10deg);
+  -moz-transform: skew(-10deg);
+  -ms-transform: skew(-10deg);
+  -o-transform: skew(-10deg);
+}
+
+.main-button a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.main-button:hover a {
+  color: orange;
+}
+.main-button:focus a {
+  color: orange;
+}
+
+/* Small screens (phone) */
+@media (max-width: 599px) {
+  /* CSS rules go here */
+}
+
+/* Medium screens (tablet) */
+@media (min-width: 600px) and (max-width: 959px) {
+  /* CSS rules go here */
+  .container {
+    margin-top: 5%;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .container .text {
+    font-size: 30px;
+  }
+  .text.sec-text:before {
+    height: 100%;
+    width: 100%;
+  }
+  #main-pic {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -228px;
+    left: 77px;
+  }
+  .main-button {
+    font-size: 150%;
+    width: 50%;
+    height: 45px;
+    margin-top: 4%;
+    margin-left: 19%;
+  }
+}
+
+/* Large screens (desktop) */
+@media (min-width: 960px) {
+  /* CSS rules go here */
+  .container {
+    margin-top: 5%;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .container .text {
+    font-size: 30px;
+  }
+  .text.sec-text:before {
+    height: 100%;
+    width: 100%;
+  }
+  #main-pic {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: -228px;
+    left: 77px;
+  }
+  .main-button {
+    font-size: 150%;
+    width: 50%;
+    height: 45px;
+    margin-top: 4%;
+    margin-left: 19%;
+  }
+}
